@@ -118,7 +118,7 @@ public class ComponentesSelenium {
         Assert.assertEquals("C", selectionOption.getFirstSelectedOption().getText());
     }
 
-    // TESTE COUNTRY
+    // TESTE PAÍS
     @Test
     public void selectCountry() {
         WebElement countryDropdown = driver.findElement(
@@ -152,7 +152,7 @@ public class ComponentesSelenium {
         monthSelect.selectByVisibleText("April");
     }
 
-    // TESTE PASSWORD
+    // TESTE SENHA
     @Test
     public void fillPassword() {
         WebElement passwordField = driver.findElement(By.id("firstpassword"));
@@ -164,7 +164,7 @@ public class ComponentesSelenium {
         passwordField.sendKeys("Senha123@");
     }
 
-    // TESTE CONFIRM PASSWORD
+    // TESTE CONFIRMAR SENHA
     @Test
     public void fillConfirmPassword() {
         WebElement confirmField = driver.findElement(By.id("secondpassword"));
